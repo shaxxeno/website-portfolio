@@ -1,0 +1,182 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+
+/* FONTS */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+body{
+    overflow: hidden;
+    background-color: #FCFBF5 !important;
+}
+
+.show-overflow {
+    overflow: visible;
+}
+
+.navbar {
+    opacity: 0;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    letter-spacing: 3px;
+    font-size: 32px;
+    animation: showElements 1s ease-in-out forwards 1.5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 20px 0;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0 20px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    background-color: black;
+    width: 0%;
+    height: .4px;
+    transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 90%;
+}
+/* NAVBAR STYLING*/
+
+
+
+/* PARTICLES STYLING */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FCFBF5; /* Background color or image */
+}
+/* PARTICLES STYLING */
+
+
+/* HOME SECTION */
+
+#home {
+    padding: 300px;
+}
+
+
+#home h1 {
+    position: relative;
+    font-size: 120px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: black;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showElements {
+    from {
+        opacity: 0; /* Elements are initially hidden */
+    }
+    to {
+        opacity: 1; /* Elements become visible after 2s (adjust as needed) */
+    }
+}
+
+
+#home a, p{
+    opacity: 0;
+    animation: showElements 1s ease-in-out forwards 1.5s;
+}
+
+.arrowlanding {
+    margin-top: 350px;
+    opacity: 0;
+    animation: showElements 1s ease-in-out forwards 1.5s;
+}
+
+#home p {
+    position: relative;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+#home a {
+    position: relative;
+    margin: 20px;
+    text-decoration: none;
+}
+
+
+/* HOME SECTION */
+
+footer {
+    position: relative;
+}
+
+
+#bio {
+    padding: 300px;
+}
+
+#bio img, p {
+    position: relative;
+}
+
+
+#services{
+    padding: 300px;
+}       
+
+#services p, h4, h3 {
+    position: relative;
+}
+
+#services h3 {
+    margin-bottom: 200px;
+}
+
+.rotate {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.cross {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s
+}
+
+
+
+
