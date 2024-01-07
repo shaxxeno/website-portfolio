@@ -27,7 +27,7 @@ CREATE TABLE contacts (
 
 -- Insert Data
 INSERT INTO users (full_name, job_position, bio) VALUES
-    ('Dmytro Novikov', 'Python developer', 'CPP CPP');
+    ('Dmytro Novikov', 'Software developer', 'CPP CPP');
 
 INSERT INTO services (user_id, title, description) VALUES
     (1, 'Trading system automation', 'includes: auto-trading strategy');
@@ -35,5 +35,8 @@ INSERT INTO services (user_id, title, description) VALUES
 INSERT INTO services (user_id, title, description) VALUES
     (1, 'Data Science', 'includes: data mining');
 
+INSERT INTO services (user_id, title, description) VALUES
+	(1, 'Web Development', 'includes: full-stack development');
+
 INSERT INTO contacts (user_id, email, linkedin_url, github_url) VALUES
-    (1, 'novvikovdmitry@gmail.com', 'shorturl.at/hqzH1', 'https://github.com/shaxxeno');
+    (1, 'novvikovdmitry@gmail.com', 'https://www.linkedin.com/in/dmytro-noviikov/', 'https://github.com/shaxxeno');

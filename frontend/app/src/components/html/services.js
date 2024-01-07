@@ -1,29 +1,80 @@
-// Services.js
 import React from 'react';
+import { useServicesAPI } from '../js/api';
+import { useInView } from 'react-intersection-observer';
+import SvgAnimation from '../js/svg_animation';
 
-const Services = () => {
+
+function Services() {
+    const servicesData = useServicesAPI('http://127.0.0.1:5000');
+    const DataScience = servicesData[1];
+    const TradingAutomation = servicesData[0];
+    const WebDevelopment = servicesData[2];
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+        
+    if (!inView) {
+        return <section ref={ref} id="bio" className="bg-none" />;
+    }
+
     return (
-        <section id="services" class="bg-none">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3>Services</h3>
-                    </div>
+        <section id="services" className="bg-none">
+            <div className='closing-line'>
+                <svg width="1920" height="1" viewBox="0 0 1920 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line className='animated-element' y1="0.5" x2="1920" y2="0.5" stroke="black"/>
+                </svg>
+                <SvgAnimation />
+            </div>
+            <div className="container-fluid">
+                <div className='services-h3 text-start' style={{marginLeft: "50px", letterSpacing: "5px", fontSize: "52px", fontWeight: "300"}}>
+                    Services
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <h4>Data Science</h4>
+                <div className="row gx-0">
+                    <div className="col text-start" style={{margin: "0 50px"}}>
+                        <div style={{fontSize: "32px", paddingBottom: "50px", fontWeight: "400"}}>
+                            {DataScience && DataScience.title}
+                        </div>
+                        <div>
+                            <p style={{fontSize: "20px", textAlign: "start"}}>
+                                <div>I will take care of organizing and optimizing your data with data engineering.</div>
+                                <div>Additionally, I'll delve into the data to extract valuable insights through data mining.</div>
+                                <div>Finally, I'll create clear and understandable data visualizations to help you make informed decisions.</div>
+                            </p>
+                        </div>
                     </div>        
-                    <div class="col text-center">
-                        <h4>Trading System Development</h4>
+                    <div className="col text-start" style={{margin: "0 50px"}}>
+                        <div style={{fontSize: "32px", paddingBottom: "50px", fontWeight: "400"}}>
+                            {TradingAutomation && TradingAutomation.title}
+                        </div>
+                        <div>
+                            <p style={{fontSize: "20px", textAlign: "start"}}>
+                                <div>I will build a trading system, including data design
+                                (market data capture, trading metrics, trading parameters
+                                surfaces), trading strategy implementation, automatic order
+                                execution and market data processing.</div>
+                                <div>Additionally, I can conduct a backtest for your trading strategy that will help
+                                you find the vulnerabilities and improvement points of your trading strategy</div>
+                            </p>
+                        </div>
                     </div>
-                    <div class="col text-center">
-                        <h4>Web Development</h4>
+                    <div className="col text-start" style={{margin: "0 50px"}}>
+                        <div style={{fontSize: "32px", paddingBottom: "50px", fontWeight: "400"}}>
+                            {WebDevelopment && WebDevelopment.title}
+                        </div>
+                        <div>
+                            <p style={{fontSize: "20px", textAlign: "start"}}>
+                                <div>I will handle the entire development process for your website, covering both frontend and backend components.</div>
+                                <div>On the frontend, I'll create the user interface, ensuring it's visually appealing and user-friendly.</div>
+                                <div>For the backend, I'll implement the server-side logic, manage databases, 
+                                and develop APIs.</div>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     );
-};
+}
 
 export default Services;

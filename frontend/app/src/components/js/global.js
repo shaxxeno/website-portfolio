@@ -4,7 +4,7 @@ function SmoothScrollComponent() {
     useEffect(() => {
         const smoothScroll = (targetElement, duration) => {
         const targetPosition = targetElement.offsetTop;
-        const startPosition = window.pageYOffset;
+        const startPosition = window.scrollY;
         const distance = targetPosition - startPosition;
         let startTime = null;
 

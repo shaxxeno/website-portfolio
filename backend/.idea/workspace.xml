@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47d7ec8d-52de-46fe-ba34-32035422e96a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/components/html/bio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/components/html/bio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/components/html/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/components/html/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/components/html/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/components/html/services.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2aNEcqnoZEAWSyzDa13ZBabAF3i" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/dmytro/projects/my_projects/web_portfolio/backend"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47d7ec8d-52de-46fe-ba34-32035422e96a" name="Changes" comment="" />
+      <created>1704150718589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704150718589</updated>
+    </task>
+    <servers />
+  </component>
+</project>
