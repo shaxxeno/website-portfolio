@@ -38,9 +38,9 @@ function Bio() {
                                 <p>My favourite book is "England, England" by Julian Barnes.</p>
                                 <p>I plan on to relocate to the US soon.</p>
                                 <p>I love doing martial arts, playing chess and guitar.</p>
-                                <p>My everyday mood can be expressed by B.R.M.C., Deftones and Yann Tiersenn.</p>
+                                <p>My favourite music artist is Yann Tiersenn.</p>
                             </div>
-                            <div className='col-1'>
+                            <div className='col-1 '>
                                 <div className='bio-svg'>
                                     <svg width="397" height="791" viewBox="0 0 397 791" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path className='animated-element' d="M264 649L134 704.5L264 760" stroke="black"/>

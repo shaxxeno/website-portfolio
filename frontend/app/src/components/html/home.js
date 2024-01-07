@@ -27,7 +27,7 @@ function Home() {
     return (
         <section id="home" className="bg-none">
             <div className="container-fluid text-center">
-                <div><h1> {userData.full_name} </h1></div>
+                <h1> {userData.full_name} </h1>
                 <p style={{fontSize: "48px"}}>{userData.job_position}</p>
                 <a href={`mailto:${contactsData.email}`} onClick={(e) => { e.preventDefault(); copyToClipboard(); }}>
                     <img src={mailImage} className="img-fluid" alt="email" style={{ width: '80px', height: '80px' }} />

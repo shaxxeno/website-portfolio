@@ -63,19 +63,19 @@ footer {
     position: relative;
 }
 
-.navbar .navbar-nav .nav-item::after {
+.nav-item::after {
     position: absolute;
     bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
     content: "";
-    background-color: black;
+    background-color: #454443;
     width: 0%;
     height: .4px;
     transition: all 0.5s;
 }
-.navbar .navbar-nav .nav-item:hover::after {
+.nav-item:hover::after {
     width: 90%;
 }
 
@@ -195,8 +195,19 @@ footer {
 
 /* CONTACTS SECTION STYLING */
 
-#contacts .container {
+#contacts .container-fluid {
     margin-top: 100px;
+}
+
+
+#contacts a {
+    text-decoration: none;
+    color: #454443;
+    font-size: 26px;
+}
+
+#contacts .row .col-4 {
+    position: relative;
 }
 
 /* CONTACTS SECTION STYLING */
