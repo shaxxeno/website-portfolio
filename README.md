@@ -44,6 +44,12 @@ Install dependencies:
 pip install requirements.txt
 ```
 
+rename .env.sample to .env
+```
+mv .env.sample .env
+```
+
+
 Run the backend server
 ```
 python app.py
