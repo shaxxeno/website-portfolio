@@ -11,7 +11,7 @@ git clone https://github.com/shaxxeno/website-portfolio.git
 
 
 
-###BACKEND
+### BACKEND
 
 Navigate to the backend directory:
 ```
@@ -50,7 +50,7 @@ python app.py
 
 ```
 
-###FRONTEND
+### FRONTEND
 
 Navigate to the frontend directory
 ```
