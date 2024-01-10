@@ -59,7 +59,6 @@ function Bio() {
                                 fancy websites. My technology stack includes <b>Pandas, Numpy, Flask, FastApi, PostgreSQL, React</b> etc.
                             </p>
                             <p>I plan on to relocate to the US.</p>
-                            <p>I love reading books and playing guitar.</p>
                             <p>My favourite book is "England, England" by Julian Barnes.</p>
                             <p>
                                 My favourite music artists are B.R.M.C., Deftones and Yann

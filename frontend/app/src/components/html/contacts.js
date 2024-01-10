@@ -26,8 +26,7 @@ function Contacts() {
             <div className='container-fluid text-center'>
                 <h3 style={{letterSpacing: "5px", fontSize: "52px", fontWeight: "300"}}>Contacts</h3>
                 <p style={{marginTop: "50px", fontSize: "24px"}}>Feel free to contact me for any question. For open source projects, 
-                please open an issue or a pull request on Github. For business inquiries, contact me via Email. 
-                For job proposals, follow me on LinkedIn.</p>
+                please open an issue or a pull request on Github. For business/job inquiries, contact me via Email or LinkedIn.</p>
                 <div className='contact-links'>
                     <a
                     href={`mailto:${contactsData.email}`}
