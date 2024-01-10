@@ -28,16 +28,30 @@ function Home() {
         <section id="home" className="bg-none">
             <div className="container-fluid text-center">
                 <h1> {userData.full_name} </h1>
-                <p style={{fontSize: "48px"}}>{userData.job_position}</p>
-                <a href={`mailto:${contactsData.email}`} onClick={(e) => { e.preventDefault(); copyToClipboard(); }}>
-                    <img src={mailImage} className="img-fluid" alt="email" style={{ width: '80px', height: '80px' }} />
-                    <div className={`email-copy ${copyNotification ? 'active' : ''}`}>Copied to clipboard!</div>
+                <p className='job-position'>{userData.job_position}</p>
+                <a
+                href={`mailto:${contactsData.email}`}
+                onClick={(e) => {
+                    e.preventDefault();
+                    copyToClipboard();
+                }}
+                className="img-fluid_container"
+                >
+                <img
+                    src={mailImage}
+                    className="img-fluid"
+                    alt="email"
+                />
+                    <div className={`email-copy ${copyNotification ? "active" : ""}`}>
+                        Copied to clipboard!
+                    </div>
                 </a>
+
                 <a href={contactsData.linkedin_url}>
-                    <img src={linkedinImage} className="img-fluid" alt="linkedin_url" style={{ width: '80px', height: '80px' }} />
+                    <img src={linkedinImage} className="img-fluid" alt="linkedin_url"/>
                 </a>
                 <a href={contactsData.github_url}>
-                    <img src={githubImage} className="img-fluid" alt="github_url" style={{ width: '80px', height: '80px' }} />
+                    <img src={githubImage} className="img-fluid" alt="github_url"/>
                 </a>
             </div>
             <div className='closing-line'>

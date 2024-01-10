@@ -2,7 +2,7 @@ import React from 'react';
 import { useServicesAPI } from '../js/api';
 import { useInView } from 'react-intersection-observer';
 import SvgAnimation from '../js/svg_animation';
-
+import SmoothScrollComponent from '../js/global';
 
 function Services() {
     const servicesData = useServicesAPI('http://127.0.0.1:5000');
@@ -27,7 +27,7 @@ function Services() {
                 <SvgAnimation />
             </div>
             <div className="container-fluid">
-                <div className='services-h3 text-start' style={{marginLeft: "50px", letterSpacing: "5px", fontSize: "52px", fontWeight: "300"}}>
+                <div className='services-h3'>
                     Services
                 </div>
                 <div className="row gx-0">
@@ -71,6 +71,16 @@ function Services() {
                             </p>
                         </div>
                     </div>
+                </div>
+                    <div className='contact-me-services'>
+                        <div className='closing-line'>
+                            <svg width="1920" height="1" viewBox="0 0 1920 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line className='animated-element' y1="0.5" x2="1920" y2="0.5" stroke="black"/>
+                            </svg>
+                        <SvgAnimation />
+                        </div>
+                        <a className="nav-link js-scroll-trigger" href="#contacts">Contact me</a>
+                    <SmoothScrollComponent />
                 </div>
             </div>
         </section>

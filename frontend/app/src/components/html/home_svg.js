@@ -14,7 +14,7 @@ function HomeSvg() {
 
     return (
         <section ref={ref} className="home-svg bg-none">
-            <div className="container-fluid">
+            <div className="container-fluid" style={{padding: 0}}>
                 <svg width="100%" height="100%" viewBox="0 0 1921 922" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect className='animated-element' x="854.333" y="576" width="106.667" height="115" stroke="black"/>
                     <rect className='animated-element' x="961" y="576" width="106.667" height="115" stroke="black"/>

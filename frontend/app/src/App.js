@@ -6,15 +6,17 @@ import Services from './components/html/services';
 import Contacts from './components/html/contacts';
 import Footer from './components/html/footer';
 import HomeSvg from './components/html/home_svg';
-import SmoothScrollComponent from './components/js/global';
 import ParticlesHome from './components/js/particles';
 import ContactsSvg from './components/html/contacts_svg';
+import ResponsiveNavbar from './components/html/responsive/responsive_navbar';
+
 
 function App() {
   return (
     <>
       <ParticlesHome />
       <Navbar />
+      <ResponsiveNavbar />
       <Home />
       <HomeSvg />
       <Bio />
@@ -22,7 +24,6 @@ function App() {
       <ContactsSvg />
       <Contacts />
       <Footer />
-      <SmoothScrollComponent />
     </>
   );
 }

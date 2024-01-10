@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SmoothScrollComponent from '../js/global';
 
 function Navbar() {
     const [navbarStyle, setNavbarStyle] = useState({
@@ -11,23 +12,18 @@ function Navbar() {
         const handleScroll = () => {
             const currentScrollPos = window.scrollY;
 
-            // Determine the scroll direction
             const isScrollingUp = currentScrollPos < prevScrollPos;
 
-            // Update the transform property based on scroll direction
             setNavbarStyle((prevStyle) => ({
                 ...prevStyle,
                 transform: isScrollingUp || currentScrollPos === 0 ? 'translate(0px, 0)' : `translate(0px, ${-currentScrollPos}px)`,
             }));
 
-            // Update the previous scroll position
             setPrevScrollPos(currentScrollPos);
         };
 
-        // Attach the scroll event listener
         window.addEventListener('scroll', handleScroll);
 
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -59,6 +55,7 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
+            <SmoothScrollComponent />
         </nav>
     );
 }
