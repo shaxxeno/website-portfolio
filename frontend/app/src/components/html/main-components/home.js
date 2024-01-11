@@ -1,7 +1,7 @@
+import '../styles/home.css'
 import React, { useState } from 'react';
 import AnimationComponent from '../../js/home_animation';
 import { useUserAPI, useContactsAPI } from '../../js/api';
-import '../styles/home.css'
 
 import mailImage from '../../img/mail.svg';
 import linkedinImage from '../../img/linkedin.svg';
@@ -36,22 +36,22 @@ function Home() {
                     e.preventDefault();
                     copyToClipboard();
                 }}
-                className="img-fluid_container"
+                className="column-direction-link"
                 >
-                <img
-                    src={mailImage}
-                    className="img-fluid"
-                    alt="email"
-                />
+                    <img
+                        src={mailImage}
+                        className="img-fluid"
+                        alt="email"
+                    />
                     <div className={`email-copy ${copyNotification ? "active" : ""}`}>
                         Copied to clipboard!
                     </div>
                 </a>
 
-                <a href={contactsData.linkedin_url}>
+                <a href={contactsData.linkedin_url} className="column-direction-link">
                     <img src={linkedinImage} className="img-fluid" alt="linkedin_url"/>
                 </a>
-                <a href={contactsData.github_url}>
+                <a href={contactsData.github_url} className="column-direction-link">
                     <img src={githubImage} className="img-fluid" alt="github_url"/>
                 </a>
             </div>

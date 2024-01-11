@@ -46,3 +46,37 @@ align-items: flex-start;
 }
 
 /* BIO SECTION STYLING */
+
+/* Responsive layout */
+
+@media screen and (max-width: 700px) {
+    #bio {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .bio-svg {
+        display: none;
+    }
+    
+    .profile-picture {
+        width: 50%;
+        display: none !important;
+    }
+
+    .bio-svg_container{
+        width: 100% !important;
+    }
+    .bio-svg_container > .col-7 {
+        width: 100%;
+    }
+
+    #bio .text-end {
+        text-align: left !important;
+    }
+
+    .bio-svg_container > .col-7 > .text-end {
+        text-align: center !important;
+    }
+}
+/* Responsive layout */

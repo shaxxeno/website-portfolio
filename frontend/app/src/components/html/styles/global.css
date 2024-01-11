@@ -102,94 +102,10 @@ body{
 /* Responsive layout */
 
 @media screen and (max-width: 700px) {
-    .bio-svg {
-        display: none !important;
-    }
-
     .navbar {
         display: none !important;
     }
-
-    #home a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home-svg {
-        opacity: 20%;
-        height: 100%;
-        width: 100%;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    #home img {
-        width: 70px;
-        height: 70px;
-    }
-
-    #home .job-position {
-        font-size: 32px;
-    }
-
-    #home h1 {
-        font-size: 70px;
-        letter-spacing: 5px;
-    }
-
-    #bio {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
     
-    .profile-picture {
-        width: 50%;
-        display: none !important;
-    }
-
-    .bio-svg_container{
-        width: 100% !important;
-    }
-    .bio-svg_container > .col-7 {
-        width: 100%;
-    }
-
-    #bio .text-end {
-        text-align: left !important;
-    }
-
-    .bio-svg_container > .col-7 > .text-end {
-        text-align: center !important;
-    }
-
-    #services{
-        padding-top: 205px;
-        padding-bottom: 0;
-    }
-
-    .services-h3 {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-bottom: 50px;
-        margin-left: 0;
-        text-align: left;
-    }
-    
-    #contacts img {
-        height: 70px;
-        width: 70px;
-    }
-    
-    #contacts a {
-        position: relative;
-        margin: 20px;
-        text-decoration: none;
-        display: inline-block;
-    }
-
-
-
     #menu__toggle {
         opacity: 0;
     }

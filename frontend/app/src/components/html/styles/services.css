@@ -33,6 +33,33 @@
 .contact-me-services a{
     text-align: center;
     font-size: 36px;
+    font-weight: 300;
 }
 
 /* SERVICES SECTION STYLING */
+
+/* Responsive layout */
+
+@media screen and (max-width: 700px) {
+    #services{
+        padding-top: 205px;
+        padding-bottom: 0;
+    }
+
+    .services-h3 {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    #services .container-fluid {
+        padding: 10px;
+    }
+
+    #services .col {
+        padding-bottom: 50px;
+    }
+}
+/* Responsive layout */
