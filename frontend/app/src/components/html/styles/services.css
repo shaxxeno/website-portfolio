@@ -1,0 +1,38 @@
+/* SERVICES SECTION STYLING */
+
+
+#services .container-fluid {
+    padding: 0;
+}
+
+#services p, h4, h3 {
+    position: relative;
+}
+
+.services-h3 {
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-size: 48px;
+    margin-left: 50px; 
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+#services h4 {
+    font-size: 32px;
+}
+
+#services li {
+    font-size: 24px;
+}
+
+.contact-me-services{
+    padding-top: 100px;
+}
+.contact-me-services a{
+    text-align: center;
+    font-size: 36px;
+}
+
+/* SERVICES SECTION STYLING */

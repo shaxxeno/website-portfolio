@@ -1,0 +1,48 @@
+/* BIO SECTION STYLING */
+
+#bio {
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+#bio .container-fluid {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bio-svg_container {
+display: flex;
+align-items: top;
+}
+
+.bio-svg {
+display: flex;
+flex-grow: 1;
+height: 100%;
+align-items: flex-start;
+opacity: 20%;
+}
+
+.bio-svg svg {
+height: 100%;
+align-items: flex-start;
+}
+
+
+#bio p {
+    position: relative;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+#bio img {
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #918F8D;
+}
+
+/* BIO SECTION STYLING */

@@ -1,13 +1,13 @@
-import './App.css';
-import Navbar from './components/html/navbar';
-import Home from './components/html/home';
-import Bio from './components/html/bio';
-import Services from './components/html/services';
-import Contacts from './components/html/contacts';
-import Footer from './components/html/footer';
-import HomeSvg from './components/html/home_svg';
+import './components/html/styles/global.css';
+import Navbar from './components/html/main-components/navbar';
+import Home from './components/html/main-components/home';
+import Bio from './components/html/main-components/bio';
+import Services from './components/html/main-components/services';
+import Contacts from './components/html/main-components/contacts';
+import Footer from './components/html/main-components/footer';
+import HomeSvg from './components/html/svg-components/home_svg';
 import ParticlesHome from './components/js/particles';
-import ContactsSvg from './components/html/contacts_svg';
+import ContactsSvg from './components/html/svg-components/contacts_svg';
 import ResponsiveNavbar from './components/html/responsive/responsive_navbar';
 
 

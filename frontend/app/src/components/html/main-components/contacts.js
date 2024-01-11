@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import {useContactsAPI } from '../js/api';
+import '../styles/contacts.css'
 
-import mailImage from '../img/mail.svg';
-import linkedinImage from '../img/linkedin.svg';
-import githubImage from '../img/github.svg';
+import {useContactsAPI } from '../../js/api';
+
+import mailImage from '../../img/mail.svg';
+import linkedinImage from '../../img/linkedin.svg';
+import githubImage from '../../img/github.svg';
 
 function Contacts() {
     const contactsData = useContactsAPI('http://127.0.0.1:5000');

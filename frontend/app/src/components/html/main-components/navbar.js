@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import SmoothScrollComponent from '../js/global';
+import '../styles/navbar.css'
+
+import SmoothScrollComponent from '../../js/global';
 
 function Navbar() {
     const [navbarStyle, setNavbarStyle] = useState({

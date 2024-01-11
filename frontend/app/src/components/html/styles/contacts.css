@@ -1,0 +1,29 @@
+/* CONTACTS SECTION STYLING */
+
+#contacts .container-fluid {
+    margin-top: 100px;
+}
+
+
+.contact-links{
+    padding-top: 50px;
+}
+
+#contacts img {
+    height: 90px;
+    width: 90px;
+}
+
+#contacts a {
+    position: relative;
+    margin: 100px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+#contacts .row .col-4 {
+    position: relative;
+}
+
+/* CONTACTS SECTION STYLING */

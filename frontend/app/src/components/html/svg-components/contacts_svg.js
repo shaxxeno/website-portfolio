@@ -1,19 +1,19 @@
 import React from 'react';
-import SvgAnimation from '../js/svg_animation';
+import SvgAnimation from '../../js/svg_animation';
 import { useInView } from 'react-intersection-observer';
 
 function ContactsSvg() {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    });
+    // const [ref, inView] = useInView({
+    //     triggerOnce: true,
+    //     threshold: 0.1,
+    // });
 
-    if (!inView) {
-        return <section ref={ref} className="contacts-svg bg-none" />;
-    }
+    // if (!inView) {
+    //     return <section ref={ref} className="contacts-svg bg-none" />;
+    // }
 
     return (
-        <section ref={ref} className="contact-svg bg-none overflow-hidden">
+        <section className="contact-svg bg-none overflow-hidden">
             <div className='container-fluid overflow-hidden' style={{padding: "0px"}}>
                 <div className='closing-line'>
                     <svg width="1920" height="1" viewBox="0 0 1920 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ function ContactsSvg() {
                     </svg>
                 </div>
             </div>
-            <SvgAnimation />
+            {/* <SvgAnimation /> */}
         </section>
     );
 }

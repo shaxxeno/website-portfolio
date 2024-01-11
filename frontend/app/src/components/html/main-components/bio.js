@@ -1,22 +1,24 @@
 import React from 'react';
-import profilePicture from '../img/profile_picture.jpg';
-import SvgAnimation from '../js/svg_animation';
-import { useUserAPI } from '../js/api'
+import '../styles/bio.css'
+
+import profilePicture from '../../img/profile_picture.jpg';
+import SvgAnimation from '../../js/svg_animation';
+import { useUserAPI } from '../../js/api'
 import { useInView } from 'react-intersection-observer';
 
 function Bio() {
     const userData = useUserAPI('http://127.0.0.1:5000');
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    });
+    // const [ref, inView] = useInView({
+    //     triggerOnce: true,
+    //     threshold: 0.1,
+    // });
         
-    if (!inView) {
-        return <section ref={ref} id="bio" className="bg-none" />;
-    }
+    // if (!inView) {
+    //     return <section ref={ref} id="bio" className="bg-none" />;
+    // }
 
     return (
-        <section ref={ref} id="bio" className="bg-none">
+        <section id="bio" className="bg-none">
             <div className='closing-line'>
                 <svg width="1920" height="1" viewBox="0 0 1920 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line className='animated-element' y1="0.5" x2="1920" y2="0.5" stroke="black"/>
@@ -146,7 +148,7 @@ function Bio() {
                     <line className='animated-element' y1="0.5" x2="1920" y2="0.5" stroke="black"/>
                 </svg>
             </div>
-            <SvgAnimation />
+            {/* <SvgAnimation /> */}
         </section>
     );
 }

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import AnimationComponent from '../js/home_animation';
-import { useUserAPI, useContactsAPI } from '../js/api';
+import AnimationComponent from '../../js/home_animation';
+import { useUserAPI, useContactsAPI } from '../../js/api';
+import '../styles/home.css'
 
-import mailImage from '../img/mail.svg';
-import linkedinImage from '../img/linkedin.svg';
-import githubImage from '../img/github.svg';
+import mailImage from '../../img/mail.svg';
+import linkedinImage from '../../img/linkedin.svg';
+import githubImage from '../../img/github.svg';
 
 function Home() {
     const userData = useUserAPI('http://127.0.0.1:5000');

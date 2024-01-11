@@ -1,19 +1,19 @@
-import React from 'react';
-import SvgAnimation from '../js/svg_animation';
+import React, { useEffect, useState } from 'react';
+import SvgAnimation from '../../js/svg_animation';
 import { useInView } from 'react-intersection-observer';
 
 function HomeSvg() {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    });
+    // const [ref, inView] = useInView({
+    //     triggerOnce: true,
+    //     threshold: 0.6,
+    // });
 
-    if (!inView) {
-        return <section ref={ref} className="home-svg bg-none" />;
-    }
+    // if (!inView) {
+    //     return <section ref={ref} className="home-svg bg-none" />;
+    // }
 
     return (
-        <section ref={ref} className="home-svg bg-none">
+        <section className="home-svg bg-none">
             <div className="container-fluid" style={{padding: 0}}>
                 <svg width="100%" height="100%" viewBox="0 0 1921 922" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect className='animated-element' x="854.333" y="576" width="106.667" height="115" stroke="black"/>
@@ -35,7 +35,7 @@ function HomeSvg() {
                     <line className='animated-element' x1="1" y1="0.5" x2="1921" y2="0.5" stroke="black"/>
                 </svg>
             </div>
-            <SvgAnimation />
+            {/* <SvgAnimation /> */}
         </section>
     );
 }

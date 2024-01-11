@@ -1,0 +1,48 @@
+/* NAVBAR STYLING */
+
+.navbar {
+    opacity: 0;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    letter-spacing: 3px;
+    font-size: 36px;
+    animation: showElements 1s ease-in-out forwards 1.5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 20px 0;
+}
+
+.navbar a {
+    font-weight: 100;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0 20px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    background-color: #454443;
+    width: 0%;
+    height: .4px;
+    transition: all 0.5s;
+}
+.nav-item:hover::after {
+    width: 90%;
+}
+
+/* NAVBAR STYLING*/
