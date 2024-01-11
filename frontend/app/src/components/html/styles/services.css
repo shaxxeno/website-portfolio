@@ -3,17 +3,28 @@
 
 #services .container-fluid {
     padding: 0;
+    overflow: hidden;
 }
 
 #services p, h4, h3 {
     position: relative;
 }
 
+#services .col {
+    margin: 50px;
+}
+
+.services-title {
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
 .services-h3 {
     text-align: left;
     padding-top: 100px;
-    padding-bottom: 200px;
-    font-size: 48px;
+    padding-bottom: 150px;
+    font-size: 52px;
     margin-left: 50px; 
     letter-spacing: 5px;
     font-weight: 300;
@@ -21,10 +32,6 @@
 
 #services h4 {
     font-size: 32px;
-}
-
-#services li {
-    font-size: 24px;
 }
 
 .contact-me-services{
@@ -46,6 +53,10 @@
         padding-bottom: 0;
     }
 
+    .services-title {
+        font-size: 30px;
+    }
+
     .services-h3 {
         padding-top: 0;
         padding-bottom: 0;
@@ -60,6 +71,7 @@
 
     #services .col {
         padding-bottom: 50px;
+        margin: 0;
     }
 }
 /* Responsive layout */

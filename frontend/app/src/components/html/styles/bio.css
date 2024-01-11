@@ -5,6 +5,7 @@
     padding-bottom: 300px;
 }
 
+
 #bio .container-fluid {
     max-width: 100%;
     width: 100%;
@@ -32,15 +33,15 @@ align-items: flex-start;
 
 #bio p {
     position: relative;
-    font-size: 22px;
-    margin-top: 50px;
+    font-size: 30px;
+    margin-top: 25px;
 }
 
 #bio img {
     position: relative;
     float: right;
     margin-right: 20px;
-    width: 70%;
+    width: 80%;
     border-radius: 8px;
     border: 1px solid #918F8D;
 }

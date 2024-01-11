@@ -32,40 +32,40 @@ function Services() {
                 <div className='services-h3'>
                     Services
                 </div>
-                <div className="row gx-0">
-                    <div className="col text-start" style={{margin: "0 50px"}}>
-                        <div style={{fontSize: "32px", paddingBottom: "50px", fontWeight: "400"}}>
+                <div className="row">
+                    <div className="col text-start">
+                        <div className='services-title'>
                             {DataScience && DataScience.title}
                         </div>
                         <div>
-                            <p style={{fontSize: "20px", textAlign: "start"}}>
+                            <p style={{fontSize: "26px", textAlign: "start"}}>
                                 <div>I will take care of organizing and optimizing your data with data engineering.</div>
-                                <div>Additionally, I'll delve into the data to extract valuable insights through data mining.</div>
+                                <div>Additionally, I'll research the provided data to extract valuable insights through data mining.</div>
                                 <div>Finally, I'll create clear and understandable data visualizations to help you make informed decisions.</div>
                             </p>
                         </div>
                     </div>        
-                    <div className="col text-start" style={{margin: "0 50px"}}>
-                        <div style={{fontSize: "32px", paddingBottom: "50px", fontWeight: "400"}}>
+                    <div className="col text-start">
+                        <div className='services-title'>
                             {TradingAutomation && TradingAutomation.title}
                         </div>
                         <div>
-                            <p style={{fontSize: "20px", textAlign: "start"}}>
+                            <p style={{fontSize: "26px", textAlign: "start"}}>
                                 <div>I will build a trading system, including data design
                                 (market data capture, trading metrics, trading parameters
                                 surfaces), trading strategy implementation, automatic order
                                 execution and market data processing.</div>
                                 <div>Additionally, I can conduct a backtest for your trading strategy that will help
-                                you find the vulnerabilities and improvement points of your trading strategy</div>
+                                you find the vulnerabilities and points of improvement of your trading strategy.</div>
                             </p>
                         </div>
                     </div>
-                    <div className="col text-start" style={{margin: "0 50px"}}>
-                        <div style={{fontSize: "32px", paddingBottom: "50px", fontWeight: "400"}}>
+                    <div className="col text-start">
+                        <div className='services-title'>
                             {WebDevelopment && WebDevelopment.title}
                         </div>
                         <div>
-                            <p style={{fontSize: "20px", textAlign: "start"}}>
+                            <p style={{fontSize: "26px", textAlign: "start"}}>
                                 <div>I will handle the entire development process for your website, covering both frontend and backend components.</div>
                                 <div>On the frontend, I'll create the user interface, ensuring it's visually appealing and user-friendly.</div>
                                 <div>For the backend, I'll implement the server-side logic, manage databases, 
