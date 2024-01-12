@@ -7,7 +7,7 @@ import { useUserAPI } from '../../js/api'
 import { useInView } from 'react-intersection-observer';
 
 function Bio() {
-    const userData = useUserAPI('http://127.0.0.1:5000');
+    // const userData = useUserAPI('http://127.0.0.1:5000');
     // const [ref, inView] = useInView({
     //     triggerOnce: true,
     //     threshold: 0.1,

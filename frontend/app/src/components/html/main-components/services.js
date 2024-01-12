@@ -7,10 +7,10 @@ import SvgAnimation from '../../js/svg_animation';
 import SmoothScrollComponent from '../../js/global';
 
 function Services() {
-    const servicesData = useServicesAPI('http://127.0.0.1:5000');
-    const DataScience = servicesData[1];
-    const TradingAutomation = servicesData[0];
-    const WebDevelopment = servicesData[2];
+    // const servicesData = useServicesAPI('http://127.0.0.1:5000');
+    // const DataScience = servicesData[1];
+    // const TradingAutomation = servicesData[0];
+    // const WebDevelopment = servicesData[2];
     // const [ref, inView] = useInView({
     //     triggerOnce: true,
     //     threshold: 0.1,
@@ -35,7 +35,8 @@ function Services() {
                 <div className="row">
                     <div className="col text-start">
                         <div className='services-title'>
-                            {DataScience && DataScience.title}
+                            {/* {DataScience && DataScience.title} */}
+                            Data Science
                         </div>
                         <div>
                             <p style={{fontSize: "26px", textAlign: "start"}}>
@@ -47,7 +48,8 @@ function Services() {
                     </div>        
                     <div className="col text-start">
                         <div className='services-title'>
-                            {TradingAutomation && TradingAutomation.title}
+                            {/* {TradingAutomation && TradingAutomation.title} */}
+                            Trading system automation
                         </div>
                         <div>
                             <p style={{fontSize: "26px", textAlign: "start"}}>
@@ -62,7 +64,8 @@ function Services() {
                     </div>
                     <div className="col text-start">
                         <div className='services-title'>
-                            {WebDevelopment && WebDevelopment.title}
+                            {/* {WebDevelopment && WebDevelopment.title} */}
+                            Web Development
                         </div>
                         <div>
                             <p style={{fontSize: "26px", textAlign: "start"}}>

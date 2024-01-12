@@ -8,11 +8,11 @@ import linkedinImage from '../../img/linkedin.svg';
 import githubImage from '../../img/github.svg';
 
 function Contacts() {
-    const contactsData = useContactsAPI('http://127.0.0.1:5000');
+    // const contactsData = useContactsAPI('http://127.0.0.1:5000');
     const [copyNotification, setCopyNotification] = useState(false);
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText(contactsData.email)
+        navigator.clipboard.writeText('novvikovdmitry@gmail.com')
             .then(() => {
                 setCopyNotification(true);
                 setTimeout(() => {
@@ -31,7 +31,7 @@ function Contacts() {
                 please open an issue or a pull request on Github. For business inquiries or job proposals, contact me via Email or LinkedIn.</p>
                 <div className='contact-links'>
                     <a
-                    href={`mailto:${contactsData.email}`}
+                    href={`mailto:$novvikovdmitry@gmail.com`}
                     onClick={(e) => {
                         e.preventDefault();
                         copyToClipboard();
@@ -48,10 +48,10 @@ function Contacts() {
                         </div>
                     </a>
 
-                    <a href={contactsData.linkedin_url}>
+                    <a href='https://www.linkedin.com/in/dmytro-noviikov/'>
                         <img src={linkedinImage} className="img-fluid" alt="linkedin_url"/>
                     </a>
-                    <a href={contactsData.github_url}>
+                    <a href='https://github.com/shaxxeno'>
                         <img src={githubImage} className="img-fluid" alt="github_url"/>
                     </a>
                 </div>

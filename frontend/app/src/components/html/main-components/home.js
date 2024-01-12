@@ -8,12 +8,12 @@ import linkedinImage from '../../img/linkedin.svg';
 import githubImage from '../../img/github.svg';
 
 function Home() {
-    const userData = useUserAPI('http://127.0.0.1:5000');
-    const contactsData = useContactsAPI('http://127.0.0.1:5000');
+    // const userData = useUserAPI('http://127.0.0.1:5000');
+    // const contactsData = useContactsAPI('http://127.0.0.1:5000');
     const [copyNotification, setCopyNotification] = useState(false);
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText(contactsData.email)
+        navigator.clipboard.writeText('novvikovdmitry@gmail.com')
             .then(() => {
                 setCopyNotification(true);
                 setTimeout(() => {
@@ -28,10 +28,12 @@ function Home() {
     return (
         <section id="home" className="bg-none">
             <div className="container-fluid text-center">
-                <h1> {userData.full_name} </h1>
-                <p className='job-position'>{userData.job_position}</p>
+                {/* <h1> {userData.full_name} </h1> */}
+                <h1>Dmytro Novikov</h1>
+                {/* <p className='job-position'>{userData.job_position}</p> */}
+                <p className='job-position'>Software developer</p>
                 <a
-                href={`mailto:${contactsData.email}`}
+                href={`mailto:$novvikovdmitry@gmail.com`}
                 onClick={(e) => {
                     e.preventDefault();
                     copyToClipboard();
@@ -48,10 +50,10 @@ function Home() {
                     </div>
                 </a>
 
-                <a href={contactsData.linkedin_url} className="column-direction-link">
+                <a href='https://www.linkedin.com/in/dmytro-noviikov/' className="column-direction-link">
                     <img src={linkedinImage} className="img-fluid" alt="linkedin_url"/>
                 </a>
-                <a href={contactsData.github_url} className="column-direction-link">
+                <a href='https://github.com/shaxxeno' className="column-direction-link">
                     <img src={githubImage} className="img-fluid" alt="github_url"/>
                 </a>
             </div>
