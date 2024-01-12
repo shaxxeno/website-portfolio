@@ -75,6 +75,10 @@ transition: opacity 0.3s ease-in-out;
         margin: 25px;
     }
 
+    #home .closing-line {
+        opacity: 0;
+    }
+
     .home-svg {
         opacity: 20%;
         height: 100%;
