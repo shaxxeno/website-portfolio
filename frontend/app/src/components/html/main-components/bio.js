@@ -52,8 +52,7 @@ function Bio() {
                                 Bio
                             </div>
                             <p>
-                                Hi! I'm Dmytro, 21 years old software developer from Kyiv,
-                                Ukraine.
+                                Hi! I'm Dmytro, a 21-year-old software developer from Kyiv, Ukraine.
                             </p>
                             <p>I create with Python and C++.</p>
                             <p>
@@ -64,7 +63,7 @@ function Bio() {
                                 My favourite book is "England, England" by Julian Barnes.
                             </p>
                             <p>
-                                I crave for realizing my own ideas, I praise the knowledge and glad for every opportunity of gaining one.
+                                I aspire to realize my own ideas. I value knowledge, and I'm grateful for every opportunity to gain more.
                             </p>
                             <p>
                                 Thanks to all my friends and mentors who are helping me on my way. You are the best.
