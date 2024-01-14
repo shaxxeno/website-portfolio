@@ -11,14 +11,14 @@ function Services() {
     // const DataScience = servicesData[1];
     // const TradingAutomation = servicesData[0];
     // const WebDevelopment = servicesData[2];
-    // const [ref, inView] = useInView({
-    //     triggerOnce: true,
-    //     threshold: 0.1,
-    // });
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
         
-    // if (!inView) {
-    //     return <section ref={ref} id="bio" className="bg-none" />;
-    // }
+    if (!inView) {
+        return <section ref={ref} id="bio" className="bg-none" />;
+    }
 
     return (
         <section id="services" className="bg-none">
@@ -82,7 +82,7 @@ function Services() {
                             <svg width="1920" height="1" viewBox="0 0 1920 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line className='animated-element' y1="0.5" x2="1920" y2="0.5" stroke="black"/>
                             </svg>
-                        {/* <SvgAnimation /> */}
+                        <SvgAnimation />
                         </div>
                         <a className="nav-link js-scroll-trigger" href="#contacts">Contact me</a>
                     <SmoothScrollComponent />

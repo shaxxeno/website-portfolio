@@ -3,14 +3,14 @@ import SvgAnimation from '../../js/svg_animation';
 import { useInView } from 'react-intersection-observer';
 
 function HomeSvg() {
-    // const [ref, inView] = useInView({
-    //     triggerOnce: true,
-    //     threshold: 0.6,
-    // });
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.6,
+    });
 
-    // if (!inView) {
-    //     return <section ref={ref} className="home-svg bg-none" />;
-    // }
+    if (!inView) {
+        return <section ref={ref} className="home-svg bg-none" />;
+    }
 
     return (
         <section className="home-svg bg-none">
@@ -35,7 +35,7 @@ function HomeSvg() {
                     <line className='animated-element' x1="1" y1="0.5" x2="1921" y2="0.5" stroke="black"/>
                 </svg>
             </div>
-            {/* <SvgAnimation /> */}
+            <SvgAnimation />
         </section>
     );
 }

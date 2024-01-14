@@ -3,14 +3,14 @@ import SvgAnimation from '../../js/svg_animation';
 import { useInView } from 'react-intersection-observer';
 
 function ContactsSvg() {
-    // const [ref, inView] = useInView({
-    //     triggerOnce: true,
-    //     threshold: 0.1,
-    // });
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
 
-    // if (!inView) {
-    //     return <section ref={ref} className="contacts-svg bg-none" />;
-    // }
+    if (!inView) {
+        return <section ref={ref} className="contacts-svg bg-none" />;
+    }
 
     return (
         <section className="contact-svg bg-none overflow-hidden">
@@ -34,7 +34,7 @@ function ContactsSvg() {
                     </svg>
                 </div>
             </div>
-            {/* <SvgAnimation /> */}
+            <SvgAnimation />
         </section>
     );
 }
